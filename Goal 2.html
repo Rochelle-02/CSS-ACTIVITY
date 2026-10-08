@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Times New Roman", Times, serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-top: 40px;
+            margin-bottom: 55px;
+        }
+
+        h2 {
+            font-size: 58px;
+            margin: 0 0 48px 0;
+        }
+        .line {
+            font-size: 45px;
+            font-weight: bold;
+            margin: 0;
+            line-height: 1.28;
+        }
+
+        .element {
+            color: red;
+        }
+
+        .class {
+            color: black;
+        }
+
+        .id {
+            color: green;
+        }
+
+        .attribute {
+            color: blue;
+        }
+
+        .universal {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selectors</h1>
+
+    <h2>Applying CSS to Different Parts of HTML</h2>
+
+    <p class="line element">
+        1. The element selector targets elements based on their HTML tag name.
+    </p>
+
+    <p class="line class">
+        2. Class selectors target elements based on the value of the class attribute.
+    </p>
+
+    <p class="line id">
+        3. ID selectors target elements based on the value of the id attribute.
+    </p>
+
+    <p class="line attribute">
+        4. Attribute selectors target elements based on their attributes and values.
+    </p>
+
+    <p class="line universal">
+        5. The universal selector targets all elements.
+    </p>
+
+</body>
+</html>

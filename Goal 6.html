@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .outer-box {
+      background-color: #800080;
+      padding: 10px;
+    }
+    .middle-box {
+      background-color: #0000ff;
+      padding: 10px;
+    }
+    .inner-box {
+      background-color: #ff0000;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .inner-box:last-child {
+      margin-bottom: 0;
+    }
+    .yellow-text {
+      color: yellow;
+      font-family: serif;
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+    .white-text {
+      color: white;
+      font-family: serif;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer-box">
+    <div class="middle-box">
+      <div class="yellow-text">Yellow Text</div>
+      <div class="inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+
+      <div class="yellow-text">Yellow Text</div>
+      <div class="inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

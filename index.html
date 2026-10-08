@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Curriculum Index</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text-main: #f8fafc;
+      --text-sub: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+      --hover-bg: #1e293b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
+    .header p {
+      margin: 0;
+      color: var(--text-sub);
+    }
+
+    .table-container {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th {
+      background-color: #0f172a;
+      color: var(--text-sub);
+      padding: 16px 20px;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 18px 20px;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    .goal-tag {
+      display: inline-block;
+      background-color: rgba(56, 189, 248, 0.1);
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    .title-link {
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .title-link:hover {
+      color: var(--accent);
+    }
+
+    .desc {
+      color: var(--text-sub);
+      font-size: 0.9rem;
+    }
+
+    .btn-open {
+      display: inline-block;
+      background-color: var(--accent);
+      color: #0f172a;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: opacity 0.2s ease;
+    }
+
+    .btn-open:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>CSS Masterclass Syllabus</h1>
+      <p>Click any topic below to open the corresponding exercise file.</p>
+    </div>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Module</th>
+            <th>Topic & Concept</th>
+            <th>Key Takeaway</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+
+           <tr>
+            <td><span class="goal-tag">Goal 01</span></td>
+            <td><a href="Goal 1.html" class="title-link">CSS Selectors</a></td>
+            <td class="desc">Element, class, ID, attribute, and universal selectors.</td>
+            <td><a href="Goal 1.html" class="btn-open">View Page</a></td>
+          </tr>
+          <tr>
+            <td><span class="goal-tag">Goal 02</span></td>
+            <td><a href="Goal 2.html" class="title-link">CSS Selectors</a></td>
+            <td class="desc">Element, class, ID, attribute, and universal selectors.</td>
+            <td><a href="Goal 2.html" class="btn-open">View Page</a></td>
+          </tr>
+          <tr>
+            <td><span class="goal-tag">Goal 03</span></td>
+            <td><a href="Goal 3.html" class="title-link">Styling Div Containers</a></td>
+            <td class="desc">Applying background colors, padding, and custom classes.</td>
+            <td><a href="Goal 3.html" class="btn-open">View Page</a></td>
+          </tr>
+          <tr>
+            <td><span class="goal-tag">Goal 04</span></td>
+            <td><a href="Goal 4.html" class="title-link">Typography & Colors</a></td>
+            <td class="desc">Fonts, sizes, weigth, and absolute text alignment.</td>
+            <td><a href="Goal 4.html" class="btn-open">View Page</a></td>
+          </tr>
+          <tr>
+            <td><span class="goal-tag">Goal 05</span></td>
+            <td><a href="Goal 5.html" class="title-link">CSS Box Model</a></td>
+            <td class="desc">Sizing elements with content width, padding, borders, and margins.</td>
+            <td><a href="Goal 5.html" class="btn-open">View Page</a></td>
+          </tr>
+          <tr>
+            <td><span class="goal-tag">Goal 06</span></td>
+            <td><a href="Goal 6.html" class="title-link">Nested Box Structures</a></td>
+            <td class="desc">Managing hierarchy using outer, middle, and inner divs.</td>
+            <td><a href="Goal 6.html" class="btn-open">View Page</a></td>
+          </tr>
+          <tr>
+            <td><span class="goal-tag">Goal 07</span></td>
+            <td><a href="Goal 7.html" class="title-link">Combining Selectors</a></td>
+            <td class="desc">Targeting specific children, class combinations, and lists.</td>
+            <td><a href="Goal 7.html" class="btn-open">View Page</a></td>
+          </tr>
+          <tr>
+            <td><span class="goal-tag">Goal 08</span></td>
+            <td><a href="Goal 8 .html" class="title-link">CSS Positioning</a></td>
+            <td class="desc">Relative container with absolute circle positioning.</td>
+            <td><a href="Goal 8 .html" class="btn-open">View Page</a></td>
+          </tr>
+          <tr>
+            <td><span class="goal-tag">Goal 09</span></td>
+            <td><a href="Goal 9 .html" class="title-link">Inline-Block Display</a></td>
+            <td class="desc">Side-by-side element layout using display: inline-block.</td>
+            <td><a href="Goal 9 .html" class="btn-open">View Page</a></td>
+          </tr>
+          <tr>
+            <td><span class="goal-tag">Goal 10</span></td>
+            <td><a href="Goal 10.html" class="title-link">Block Display</a></td>
+            <td class="desc">Standard vertical element stacking using display: block.</td>
+            <td><a href="Goal 10.html" class="btn-open">View Page</a></td>
+          </tr>
+          <tr>
+            <td><span class="goal-tag">Goal 11</span></td>
+            <td><a href="Goal 11.html" class="title-link">CSS Floats Layout</a></td>
+            <td class="desc">Two-column card layout with floating images and clear footer.</td>
+            <td><a href="Goal 11.html" class="btn-open">View Page</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
